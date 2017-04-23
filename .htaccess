@@ -1,0 +1,55 @@
+AddDefaultCharset UTF-8
+DirectoryIndex index.php
+
+RewriteEngine On
+
+RewriteRule ^index.html[/]?$ / [L]
+RewriteRule ^admin[/]?$ admin/admin.php [L]
+
+RewriteRule ^admin/ad[/]?$ admin/admin.php?get=ad [L]
+RewriteRule ^admin/price[/]?$ admin/admin.php?get=price [L]
+RewriteRule ^admin/shares[/]?$ admin/admin.php?get=shares [L]
+RewriteRule ^admin/gallery[/]?$ admin/admin.php?get=gallery [L]
+RewriteRule ^admin/works[/]?$ admin/admin.php?get=works [L]
+RewriteRule ^admin/reviews[/]?$ admin/admin.php?get=reviews [L]
+
+ErrorDocument 404 /404/index.html
+AddDefaultCharset UTF-8
+
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresDefault "access 7 days"
+ExpiresByType application/javascript "access plus 1 year"
+ExpiresByType text/javascript "access plus 1 year"
+ExpiresByType text/css "access plus 1 year"
+ExpiresByType text/html "access plus 7 day"
+ExpiresByType text/x-javascript "access 1 year"
+ExpiresByType image/gif "access plus 1 year"
+ExpiresByType image/jpeg "access plus 1 year"
+ExpiresByType image/png "access plus 1 year"
+ExpiresByType image/jpg "access plus 1 year"
+ExpiresByType image/x-icon "access 1 year"
+ExpiresByType application/x-shockwave-flash "access 1 year"
+</IfModule>
+
+<ifModule mod_headers.c>
+<filesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|swf|svg)$">
+Header set Cache-Control "max-age=2592000, public"
+</filesMatch>
+<filesMatch "\.(css|js)$">
+Header set Cache-Control "max-age=2592000, public"
+</filesMatch>
+<filesMatch "\.(xml|txt)$">
+Header set Cache-Control "max-age=172800, public, must-revalidate"
+</filesMatch>
+<filesMatch "\.(html|htm|php)$">
+Header set Cache-Control "max-age=172800, private, must-revalidate"
+</filesMatch>
+</ifModule>
+
+<IfModule mod_expires.c>
+<FilesMatch "\.(ogg|ogv|svg|svgz|eot|otf|woff|mp4|ttf|rss|atom|jpg|jpeg|gif|png|ico|zip|tgz|gz|rar|bz2|doc|xls|exe|ppt|tar|mid|midi|wav|bmp|rtf)$">
+    Header set Cache-Control "max-age=2592000, must-revalidate"
+</FilesMatch>
+</IfModule>
+

@@ -1,0 +1,722 @@
+body,
+html {
+    height: 100%
+}
+body,
+ul {
+    margin: 0;
+    padding: 0
+}
+.board .gift p,
+.form .button,
+.form .centerText {
+    text-align: center
+}
+html {
+    overflow-x: hidden!important
+}
+body {
+    font-family: 'Arial Regular', sans-serif;
+    zoom: 1
+}
+:focus {
+    outline: 0
+}
+input,
+textarea {
+    border: none
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #5D92BA inset;
+    border-bottom: 1px dotted #80A9C7!important;
+    outline: 0!important;
+    -webkit-text-fill-color: #7BA1BE!important
+}
+.left {
+    float: left
+}
+.right {
+    float: right
+}
+.center {
+    margin: 0 auto
+}
+.hidden {
+    display: none !important;
+}
+.message_content {
+    position: fixed;
+    left: 15px;
+    top: 15px;
+    z-index: 999;
+    width: 25%
+}
+.form,
+.form .case,
+.message_content .message {
+    position: relative
+}
+.message_content .message {
+    clear: both;
+    margin-top: 15px;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+    background: #5D92BA;
+    display: none;
+    padding: 15px 25px
+}
+.message_content .message .text {
+    color: #fff;
+    font-size: 14px;
+    font-family: Arial;
+    font-style: italic
+}
+.message_content .warning {
+    background: #cc4c0d
+}
+.login {
+    background: #5D92BA
+}
+.form {
+    width: 300px;
+    top: 20%;
+    margin: 0 auto;
+    color: #fff
+}
+.form .title {
+    width: 100%;
+    background: url(../assets/img/service/logo.png) center no-repeat;
+    height: 100px;
+    padding-bottom: 70px
+}
+.form .input,
+.form .shadow,
+.form input {
+    color: #80A9C7;
+    border-bottom: 1px dotted #80A9C7;
+    padding: 15px 20px;
+    min-height: 60px;
+    font-size: 18px;
+    cursor: text;
+    white-space: nowrap;
+    display: block;
+    outline: 0;
+    position: relative;
+    z-index: 1
+}
+.form .shadow,
+.leftMenu,
+.topMenu {
+    position: absolute
+}
+.form .pass {
+    background: 0 0;
+    width: 100%;
+}
+.form .shadow {
+    top: 0;
+    border: none;
+    min-height: 23px;
+    z-index: 0
+}
+.form .button {
+    padding: 15px 25px;
+    cursor: pointer;
+    border-radius: 2px;
+    margin-top: 35px;
+    background: #6ea1c7
+}
+.form .button:hover {
+    box-shadow: 0 3px 3px rgba(0, 0, 0, .1);
+    background: #72A6CD
+}
+.form .active {
+    color: #fff
+}
+.topMenu {
+    padding: 15px 20px;
+    min-height: 30px;
+    background: #2a2a2a;
+    background-size: 40px;
+    left: 0;
+    top: 0;
+    right: 0;
+    color: #dadada
+}
+
+
+
+.topMenu .title {
+
+	position: absolute;
+	font-size: 21px;
+	color: #ffbd02;
+	font-family: 'Lobster', cursive;
+	left: 45%;
+
+}
+
+.topMenu .title i {
+
+	font-size: 24px;
+	color: #ffbd02;
+	margin-right: 5px;
+
+}
+
+.topMenu .logOut {
+    float: right;
+    padding: 7px 10px;
+    background: #3a3a3a;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px
+}
+.leftMenu {
+    left: 20px;
+    top: 90px;
+    width: 250px
+}
+.board,
+.content {
+    position: relative
+}
+.leftMenu ul li {
+    list-style: none;
+    background: #ba6c5d;
+    margin-bottom: 20px;
+    cursor: pointer
+}
+.leftMenu ul li:nth-child(even) {
+    background: #7c5dba
+}
+.leftMenu ul li a {
+    color: #fff;
+    display: block;
+    right: 0;
+    left: 0;
+    padding: 20px 30px
+}
+.content {
+    margin-left: 300px;
+    margin-right: 20px;
+    top: 90px;
+    max-width: 1200px
+}
+
+@font-face {
+    font-family: DSEraserCyr;
+    src: url(../fonts/eraser.eot);
+    src: url(../fonts/eraser.eot?#iefix) format('embedded-opentype'), url(../fonts/eraser.woff) format('woff'), url(../fonts/eraser.ttf) format('truetype'), url(../fonts/eraser.svg) format('svg');
+    font-weight: 400;
+    font-style: normal
+}
+
+.content .buttons {
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 60px auto;
+
+}
+
+.content .button {
+    padding: 15px 0;
+    position: relative;
+    text-align: center;
+    width: 250px;
+    background: #f3ad00;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 3px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, .1);
+    text-shadow: 0 1px 0 #d69901
+}
+.actionBut {
+    margin: 0 30px;
+}
+
+.content .buttons .green {
+
+	background: #26ce15;
+	text-shadow: 0 1px 0 #01d65e;
+
+}
+
+.topMenu .nav {
+    display: none
+}
+
+
+
+
+.board .add {
+	padding: 3px 0;
+	width: 190px;
+	margin: 20px auto;
+	color: #D5EEF9;
+	text-align: center;
+	border-bottom: 2px dashed #D5EEF9;
+	cursor: pointer;
+	font-family: 'Arial Regular', sans-serif;
+	font-size: 22px
+}
+
+.content .ad {
+	position: relative;
+	margin: 0 70px 30px;
+	min-height: 150px;
+	display: block!important
+}
+
+.ad .desc {
+	
+	padding: 20px 0;
+	text-align: center;
+	color: #2a2a2a;
+	font-size: 21px
+}
+.ad .desc .title {
+	font-size: 24px;
+	min-height: 29px
+}
+.ad .desc .gray {
+	color: #b9b9b9
+}
+.ad .desc .text {
+	margin-top: 15px
+}
+.ad .desc span {
+	color: #cc9201
+}
+
+.ad .actions {
+	
+	font-size: 16px;
+	cursor: pointer;
+	color: #7b97a4;
+	display: none;
+	position: absolute;
+	right: 0;
+	top: 30px;
+
+}
+
+.ad .actions .action {
+	
+	float: left;
+	margin-left: 10px;
+
+}
+
+.ad:hover .actions {
+	display: block;
+}
+
+.ad .image .chose {
+	font-size: 0;
+	top: 0;
+	left: 0;
+	height: 150px;
+	bottom: 0;
+	cursor: pointer;
+	opacity: .001;
+	border: none;
+	border: 1px solid #ccc;
+	border-radius: 400px
+}
+.ad .image button {
+	border-radius: 400px
+}
+
+
+
+.editblock {
+
+
+	padding: 15px 20px;
+	background: #6887FF;
+	color: #fff;
+	font-size: 16px;
+	margin: 0 auto;
+	margin-bottom: 15px;
+
+	width: 70%;
+
+}
+
+.editblock .desc .field {
+
+	float: left;
+	min-width: 100px;
+
+}
+
+.editblock .title {
+
+
+	width: 60%;
+
+}
+
+.editblock .actions, .editblock .actions .action {
+
+	float: right;
+	margin-left: 15px;
+	cursor: pointer;
+
+}
+
+.speed-bar {
+
+	margin-bottom: 25px;
+	font-style: italic;
+	color: #a1a1a1;
+	text-align: center;
+
+}
+
+.content .gallery {
+
+
+
+}
+
+.content .gallery .image {
+
+	float: left;
+	margin: 15px;
+	cursor: pointer;
+	position: relative;
+	
+}
+
+.content .gallery .image .overlay {
+
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	font-size: 24px;
+	opacity: 0;
+	transition: all 0.5s ease-out 0s;
+	
+}
+
+.content .gallery .image:hover .overlay {
+
+	opacity: 1;
+	
+}
+
+.content .gallery .image img {
+
+	height: 120px;
+
+}
+
+.content .gallery .add-image {
+
+	width: 160px;
+	height: 120px;
+	border: 2px dashed #ccc;
+	border-radius: 3px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-size: 24px;
+	color: #ccc;
+	float: left;
+	margin: 15px;
+
+	cursor: pointer;
+	position: relative;
+
+	
+}
+
+.content .gallery .add-image input, .works .work .compare input {
+
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	opacity: 0;
+
+}
+
+.shares-content .shares {
+
+	background: transparent;
+	color: #000;
+	text-align: center;
+	position: relative;
+
+}
+
+
+
+.shares-content .shares .field {
+
+	
+	clear: both;
+	width: auto;
+	float: none;
+
+}
+
+.shares-content .shares .title {
+
+	font-size: 22px;
+
+
+}
+
+.shares-content .shares .text {
+
+	margin-top: 15px;
+	font-style: italic;
+
+}
+
+.shares-content .shares .actions {
+
+	position: absolute;
+	right: 0;
+	top: 20px;
+
+
+}
+
+.works .work {
+
+	display: flex;
+	justify-content: center;
+	align-content: center;
+
+
+}
+
+.works .work .delete {
+
+	align-self: center;
+	width: 50px;
+	height: 50px;
+	border: 2px solid transparent;
+	border-radius: 999px;
+	cursor: pointer;
+	font-size: 22px;
+	color: #ccc;
+
+	display: flex;
+	justify-content: center;
+	align-content: center;
+
+
+}
+
+.works .work .delete .fa {
+
+	align-self: center;
+
+}
+
+.works .work .delete:hover {
+
+	color: #A88ADD;
+	border-color: #A88ADD;
+
+}
+
+.works .work .compare {
+
+	width: 400px;
+	height: 320px;
+	border: 2px dashed #ccc;
+	border-radius: 3px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-size: 24px;
+	color: #ccc;
+	float: left;
+	margin: 15px;
+
+	cursor: pointer;
+	position: relative;
+	
+}
+
+.works .work img {
+
+	display: none;
+	
+
+}
+
+.works .ready img {
+
+	display: block;
+
+}
+
+.works .ready .fa {
+
+	display: none;
+
+}
+
+
+.review {
+
+	position: relative;
+	margin: 25px 0;
+
+}
+
+.review .name {
+
+	font-size: 19px;
+
+}
+
+.review .text {
+
+	margin-top: 15px;
+	font-style: italic;
+
+}
+
+.review .actions {
+
+	position: absolute;
+	right: 0;
+	top: 15px;
+
+
+}
+
+.review .actions .action {
+
+	float: left;
+	margin: 0 5px;
+	cursor: pointer;
+	text-align: center;
+	width: 20px;
+	height: 20px;
+
+	display: flex;
+	justify-content: center;
+
+}
+
+.review .actions .aprove .fa-check-square-o, .review .actions .aproved .fa-square-o {
+
+	display: none;
+
+}
+
+.review .actions .aproved .fa-check-square-o {
+
+	display: block;
+
+}
+
+
+@media only screen and (min-width: 1600px) {
+    .content {
+        margin: 0 auto
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .topMenu {
+        background: #2a2a2a
+    }
+
+    .topMenu .title {
+
+		display: none;
+
+	}
+
+    .topMenu .nav,
+    .topMenu .nav li {
+        display: block
+    }
+    .topMenu .nav li {
+        list-style: none;
+        float: left;
+        padding: 15px 20px;
+        font-size: 24px
+    }
+    .topMenu .nav li i {
+        color: #ECECEC
+    }
+    .content {
+        margin-left: 0;
+        margin-top: 50px
+    }
+    
+    .leftMenu {
+        display: none
+    }
+    .topMenu .logOut {
+        font-size: 18px;
+        padding: 18px 10px
+    }
+}
+@media only screen and (max-width: 720px) {
+
+	
+
+    .ad .image {
+        position: relative;
+        margin: 0 auto;
+        clear: both
+    }
+    .ad .desc {
+        margin-left: 0
+    }
+    .form {
+        width: 80%;
+        top: 15%
+    }
+    .form .button,
+    .form .input,
+    .form .shadow {
+        font-size: 26px;
+        padding: 25px 15px
+    }
+    .form .pass {
+        width: 100%
+    }
+    .form .input {
+        border-bottom: 1px solid #9AAFBE
+    }
+    .form .title {
+        background: url(../images/whiteOwl.png) center no-repeat;
+        margin-bottom: 60px
+    }
+    .message_content {
+        width: auto;
+        right: 15px
+    }
+    .message_content .message .text {
+        padding: 30px;
+        font-size: 22px
+    }
+}
